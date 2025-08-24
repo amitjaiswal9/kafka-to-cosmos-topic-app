@@ -1,0 +1,14 @@
+
+kafka:
+  bootstrap-servers: localhost:9092
+  topic-name: ccm-disposition
+  extractor: "$.transactionId"
+  extractor2: "$.packageId"
+  #extractor: "$.data.transaction.id" transactionId
+
+
+cosmos:
+  uri: https://firstcosmosdb.documents.azure.com:443/
+  key: 2WSZH5wGlQfL6bnamw0Un1548CJnEUW4Y63R7ltNc6ugYaN5REblLDYbZP1eGGPLOnlVx2vFz4K3ACDbLuD3xA==
+  database: ingestionDb
+  container: ccmdisposition
